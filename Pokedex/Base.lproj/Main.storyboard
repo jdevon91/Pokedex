@@ -40,29 +40,30 @@
                                 <rect key="frame" x="0.0" y="119" width="414" height="617"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="giH-uD-upd">
-                                <rect key="frame" x="40" y="139" width="334" height="577"/>
+                                <rect key="frame" x="30" y="129" width="354" height="597"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f0I-w9-ikm">
-                                    <size key="itemSize" width="110" height="110"/>
+                                    <size key="itemSize" width="105" height="105"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="4PR-SC-qHN" customClass="PokeCell" customModule="Pokedex" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mod-DN-rcS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="80" id="1hg-jh-zaF"/>
+                                                        <constraint firstAttribute="height" constant="80" id="NlW-LT-Vhs"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Q-mB-tDh">
-                                                    <rect key="frame" x="0.0" y="80" width="110" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Q-mB-tDh">
+                                                    <rect key="frame" x="0.0" y="85" width="105" height="20"/>
                                                     <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,13 +72,13 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="p4Q-mB-tDh" firstAttribute="top" secondItem="Mod-DN-rcS" secondAttribute="bottom" id="IvZ-CK-bpF"/>
-                                            <constraint firstItem="p4Q-mB-tDh" firstAttribute="leading" secondItem="4PR-SC-qHN" secondAttribute="leading" id="eeD-Fa-8k8"/>
-                                            <constraint firstAttribute="trailing" secondItem="p4Q-mB-tDh" secondAttribute="trailing" id="nYc-5U-AHr"/>
-                                            <constraint firstAttribute="trailing" secondItem="Mod-DN-rcS" secondAttribute="trailing" id="uQf-Di-65d"/>
-                                            <constraint firstAttribute="bottom" secondItem="p4Q-mB-tDh" secondAttribute="bottom" id="vlh-2z-AZP"/>
-                                            <constraint firstItem="Mod-DN-rcS" firstAttribute="leading" secondItem="4PR-SC-qHN" secondAttribute="leading" id="yIr-ul-p5X"/>
-                                            <constraint firstItem="Mod-DN-rcS" firstAttribute="top" secondItem="4PR-SC-qHN" secondAttribute="top" id="ztr-2J-Xuo"/>
+                                            <constraint firstItem="Mod-DN-rcS" firstAttribute="leading" secondItem="4PR-SC-qHN" secondAttribute="leading" id="DSI-Tu-ZLJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="p4Q-mB-tDh" secondAttribute="trailing" id="MSt-fF-zjB"/>
+                                            <constraint firstItem="p4Q-mB-tDh" firstAttribute="leading" secondItem="4PR-SC-qHN" secondAttribute="leading" id="NO9-Uf-e3f"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mod-DN-rcS" secondAttribute="trailing" id="Oyw-TI-GsJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="p4Q-mB-tDh" secondAttribute="bottom" id="Us2-X7-ySL"/>
+                                            <constraint firstItem="p4Q-mB-tDh" firstAttribute="top" secondItem="Mod-DN-rcS" secondAttribute="bottom" id="VE7-3S-EuE"/>
+                                            <constraint firstItem="Mod-DN-rcS" firstAttribute="top" secondItem="4PR-SC-qHN" secondAttribute="top" id="w5v-QV-abN"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="nameLbl" destination="p4Q-mB-tDh" id="YIx-lC-v0x"/>
@@ -93,18 +94,21 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QcF-Av-owz" secondAttribute="bottom" id="DBb-dF-Iga"/>
                             <constraint firstItem="C6L-4e-aqc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KPP-7R-f1a"/>
                             <constraint firstItem="f7q-v7-YfC" firstAttribute="top" secondItem="C6L-4e-aqc" secondAttribute="bottom" id="OSU-T3-Tsk"/>
-                            <constraint firstItem="giH-uD-upd" firstAttribute="top" secondItem="f7q-v7-YfC" secondAttribute="bottom" constant="20" id="T4q-Fc-pSO"/>
+                            <constraint firstItem="giH-uD-upd" firstAttribute="top" secondItem="f7q-v7-YfC" secondAttribute="bottom" constant="10" id="T4q-Fc-pSO"/>
                             <constraint firstAttribute="trailing" secondItem="C6L-4e-aqc" secondAttribute="trailing" id="YTY-nI-XiL"/>
                             <constraint firstAttribute="trailing" secondItem="f7q-v7-YfC" secondAttribute="trailing" id="hc5-4M-KR8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="giH-uD-upd" secondAttribute="bottom" constant="20" id="jEO-Or-vsh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="giH-uD-upd" secondAttribute="bottom" constant="10" id="jEO-Or-vsh"/>
                             <constraint firstItem="QcF-Av-owz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jrP-JA-gIa"/>
-                            <constraint firstItem="giH-uD-upd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="nra-Yc-iek"/>
+                            <constraint firstItem="giH-uD-upd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="nra-Yc-iek"/>
                             <constraint firstAttribute="trailing" secondItem="QcF-Av-owz" secondAttribute="trailing" id="sZw-qS-weo"/>
                             <constraint firstItem="QcF-Av-owz" firstAttribute="top" secondItem="f7q-v7-YfC" secondAttribute="bottom" id="t1S-qB-0YQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="giH-uD-upd" secondAttribute="trailing" constant="20" id="utT-ry-mrK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="giH-uD-upd" secondAttribute="trailing" constant="10" id="utT-ry-mrK"/>
                             <constraint firstItem="f7q-v7-YfC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zEd-hj-Vtb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="giH-uD-upd" id="nC6-2x-WgJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
