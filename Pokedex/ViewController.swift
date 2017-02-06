@@ -25,6 +25,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
             
+            let pokemon = Pokemon(name: "Pokemon", pokedexId: indexPath.row)
+            
+            cell.configureCell(pokemon: pokemon)
+            
             return cell
         }
         
@@ -33,7 +37,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             return UICollectionViewCell()
         }
     
-        
     }
     
     //Action for what happens when the user taps a cell.
